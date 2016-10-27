@@ -1,0 +1,117 @@
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Minima also includes a mixin for defining media queries.
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
+
+
+.engnr.technologies {
+  font-size: 2.8em;
+}
+
+$light-teal: #E8FCF7;
+
+@mixin linear-gradient($top_color, $bottom_color) {
+  /* IE10+ */ 
+  background-image: -ms-linear-gradient(top, $top_color 0%, $bottom_color 100%) !important;
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(top, $top_color 0%, $bottom_color 100%) !important;
+
+  /* Opera */ 
+  background-image: -o-linear-gradient(top, $top_color 0%, $bottom_color 100%) !important;
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $top_color), color-stop(100, $bottom_color)) !important;
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(top, $top_color 0%, $bottom_color 100%) !important;
+
+  /* W3C Markup */ 
+  background-image: linear-gradient(to bottom, $top_color 0%, $bottom_color 100%) !important;
+}
+
+.experience {
+  @include linear-gradient(#37C1AA, #64EFCE);
+}
+
+.experience .ui.segment{
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+}
+
+.technologies {
+  @include linear-gradient(#1A534B, #1E7C69);
+
+  h2, h3 {
+    font-weight: bold !important;
+  }
+  h2 {
+    font-size: 5rem !important;
+  }
+}
+
+.request {
+  background-color: $light-teal !important;
+}
+
+h1, h3 {
+  font-weight: bold !important;
+}
+
+body {
+  padding: 20px 0px;
+}
+
+.ui.secondary.button {
+  color: #1A534B;
+  //#1E7C69);
+}
+
+.ui.text.menu, .ui.text.menu .item {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+
+#title a, #phone a, #title a:hover, #phone a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+#description {
+  margin-bottom: 1em;
+}
+
+//@import "engnr";
+
