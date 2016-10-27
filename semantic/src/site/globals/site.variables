@@ -1,3 +1,30 @@
 /*******************************
      User Global Variables
 *******************************/
+
+@emSize: 18px;
+@fontSize : 16px;
+
+@h1: 3.25em;
+@h2 : 1.714rem;
+@h3 : 1.35rem;
+@h4 : 1.25rem;
+
+@importGoogleFonts : true;
+@googleFontFamily  : 'PT+Sans:400,700&subset=cyrillic';
+
+@pageFont          : 'PT Sans';
+@headerFont        : 'PT Sans';
+@headerFontWeight: normal;
+
+
+@teal : #6da9a1;
+
+@primaryColor : #13e6b2;
+@secondaryColor : #82F0D4;
+
+//@linkColor           : #ddd;
+//@linkUnderline       : none;
+//@linkHoverColor      : lighten( @linkColor, 5);
+//@linkHoverUnderline: underline;
+
