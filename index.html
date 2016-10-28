@@ -3,15 +3,15 @@ layout: page
 description: Разрабатываем приложения для настольных компьютеров и встраиваемых устройств.
 ---
 <div class="ui vertical stripe segment">
-  <div class="ui middle aligned grid container">
-    <div class="sixteen wide column">
-      <div class="ui massive primary button">Заказать разработку</div>
-    </div>
-  </div>
-
   <div class="ui middle aligned stackable grid container">
     <div class="row">
       <div class="ten wide column">
+        <div class="ui massive primary button">Заказать разработку</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="ten wide column">
+        {% include image src="1.png" %}
         <h3 class="ui header">Превратим идею в продукт</h3>
         <p>
           Самостоятельно проверим идею: исследуем рынок, разработаем сценарий,
@@ -19,6 +19,7 @@ description: Разрабатываем приложения для настол
           Реализуем продукт: сделаем дизайн и напишем код, отладим и запустим.
         </p>
 
+        {% include image src="2.png" %}
         <h4 class="ui header">Работаем под Виндовс, Мак и Линукс</h4>
         <p>
           Помогаем разработать приложение для компьютеров под разными 
@@ -26,6 +27,7 @@ description: Разрабатываем приложения для настол
           Оптимизируем код и сделаем дистрибутивы для Виндовса, Мака и Линукса.
         </p>
 
+        {% include image src="3.png" %}
         <h4 class="ui header">Научим технику общаться</h4>
         <p>
           Реализуем ваши идеи для умного дома. Научим чайник варить кофе к завтраку,
@@ -34,6 +36,7 @@ description: Разрабатываем приложения для настол
           остальным устройствам в доме.
         </p>
 
+        {% include image src="4.png" %}
         <h4 class="ui header">Не подвергаем опасности</h4>
         <p>
           Мы не сертифицированы по ИСО. Не можем помочь с программами, которые
@@ -50,18 +53,26 @@ description: Разрабатываем приложения для настол
 
 <div class="ui vertical raised stripe experience segment">
   <div class="ui top aligned grid container">
-    <div class="twelve wide column">
+    <div class="fourteen wide column">
       <div class="ui segment">
-        <h3 class="ui header">Делали геоинформационные обучающие системы, платежные киоски и телеприставки</h3>
-        <p>
-          Работали в разных компаниях. С 2013 вместе участвовали в разработке встраиваемых приложений. Делали дизайн и ПО для приставок интернет-телевидения.
-        </p>
+        <div class="ui grid">
+          <div class="six wide column">
+            {% include image src="5.png" %}
+          </div>
+          <div class="ten wide column">
+            <h3 class="ui header">Делали геоинформационные обучающие системы, платежные киоски и телеприставки</h3>
+            <p>
+              Работали в разных компаниях. С 2013 вместе участвовали в разработке встраиваемых приложений. Делали дизайн и ПО для приставок интернет-телевидения.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="stretched row">
-      <div class="six wide column">
+      <div class="seven wide column">
         <div class="ui segment">
+          {% include image src="6.png" class="centered" %}
           <h4 class="ui header">Геоинформационные системы</h4>
           <p>
             Делали карты с метаданными. По ним пользователи ищут участки 12 соток не дальше 300 метров от озера и 30 километров от Москвы.
@@ -69,6 +80,7 @@ description: Разрабатываем приложения для настол
         </div>
 
         <div class="ui segment">
+          {% include image src="8.png" %}
           <h4 class="ui header">Телеприставки</h4>
           <p>
             Делали интерфейсы для телеприставок. Продумывали пользовательские сценарии, проектировали взаимодействие, верстали макеты экранов, сопровождали разработку и внедрение.
@@ -76,8 +88,9 @@ description: Разрабатываем приложения для настол
         </div>
       </div>
 
-      <div class="six wide column">
+      <div class="seven wide column">
         <div class="ui segment">
+          {% include image src="7.png" %}
           <h4 class="ui header">Обучение пилотов</h4>
           <p>
             2 года работы в проекте наземного обучения пилотов. Делали виртуальную модель кабины пилота, обучающие курсы, инструменты для их редактирования. Редактор курсов помогал одновременно писать курсы и сразу видеть их в интерфейсе.
@@ -85,6 +98,7 @@ description: Разрабатываем приложения для настол
         </div>
 
         <div class="ui segment">
+          {% include image src="9.png" %}
           <h4 class="ui header">Платежные киоски</h4>
           <p>
             1,5 года разработки платежных киосков. Делали так, чтобы киоск мог обращаться с купюрами и выводить интерфейс на экран.
@@ -123,6 +137,7 @@ description: Разрабатываем приложения для настол
           общение клиента с сервером по RESTful API. Пишем документацию.
         </p>
 
+        {% include image src="10.png" %}
         <h4 class="ui inverted header">Работаем по эджайлу</h4>
         <p>
           Делим проект на короткие итерации. Для них планируем функционал, отводим
