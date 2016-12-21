@@ -1,233 +1,121 @@
 ---
-layout: page
-description: Разрабатываем приложения для настольных компьютеров и встраиваемых устройств.
+layout: default
+description: "Создаем приложения для компьютеров,<br />интернета&nbsp;вещей и умных устройств"
 ---
-<div class="ui vertical stripe segment">
-  <div class="ui middle aligned stackable grid container">
-    <div class="row">
-      <div class="ten wide column">
-        <div class="ui massive primary button">Заказать разработку</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="ten wide column">
-        {% include image src="1.png" %}
-        <h3 class="ui header">Превратим идею в продукт</h3>
-        <p>
-          Самостоятельно проверим идею: исследуем рынок, разработаем сценарий,
-          проверим их на пользователях, соберем аналитику, продумаем сторимеппинг.
-          Реализуем продукт: сделаем дизайн и напишем код, отладим и запустим.
-        </p>
 
-        {% include image src="2.png" %}
-        <h4 class="ui header">Работаем под Виндовс, Мак и Линукс</h4>
-        <p>
-          Помогаем разработать приложение для компьютеров под разными 
-          операционными системами. Сделаем дизайн привычным для каждой системы.
-          Оптимизируем код и сделаем дистрибутивы для Виндовса, Мака и Линукса.
-        </p>
+<div class="ui vertical inverted middle aligned masthead basic segment">
+  <div class="ui grid container" id="description">
 
-        {% include image src="3.png" %}
-        <h4 class="ui header">Научим технику общаться</h4>
-        <p>
-          Реализуем ваши идеи для умного дома. Научим чайник варить кофе к завтраку,
-          а смартфон — выключать утюг. Для этого напишем приложение для смартфона,
-          которое будет следить за будильниками и календарем и давать команды
-          остальным устройствам в доме.
-        </p>
-
-        {% include image src="4.png" %}
-        <h4 class="ui header">Не подвергаем опасности</h4>
-        <p>
-          Мы не сертифицированы по ИСО. Не можем помочь с программами, которые
-          подвергают людей опасности. Не возьмемся разрабатывать программы для
-          управления автомобилями и медоборудованием.
-        </p>
-
-        <div class="ui huge primary button">Связаться с нами</div>
-      </div>
+    <div class="ten wide column">
+      <h1 class="ui inverted header" id="main-title">Инженерная</h1>
+      <h2 class="ui inverted header" id="main-description">{{ page.description }}</h2>
     </div>
   </div>
+
 </div>
 
 
-<div class="ui vertical raised stripe experience segment">
-  <div class="ui top aligned grid container">
-    <div class="fourteen wide column">
-      <div class="ui segment">
-        <div class="ui grid">
-          <div class="six wide column">
-            {% include image src="5.png" %}
-          </div>
-          <div class="ten wide column">
-            <h3 class="ui header">Делали геоинформационные обучающие системы, платежные киоски и телеприставки</h3>
-            <p>
-              Работали в разных компаниях. С 2013 вместе участвовали в разработке встраиваемых приложений. Делали дизайн и ПО для приставок интернет-телевидения.
+<div class="ui vertical basic segment" style="margin-top: 100px">
+  <div class="ui grid container">
+
+    <div class="row">
+      <div class="eight wide column">
+
+        <div class="ui one column padded grid">
+          <div class="column">
+            <h3 class="ui aligned icon header">
+              Настольные компьютеры
+            </h3>
+            <p>Пишем кроссплатформенные утилиты, десктопные клиенты,
+            специализированное ПО. Приложения можем сделать расширяемыми через
+            скрипты или плагины.
             </p>
+
+            <p>
+            Программы запускаются под Виндоусом, Маком и Линуксом.
+            Разрабатывать одну кодовую базу дешевле, чем портировать и поддерживать приложение под каждую платформу.</p>
+
           </div>
-        </div>
+          <div class="center aligned column">
+            <p class="ui center aligned">
+              <i class="windows icon"></i>
+              <i class="apple icon"></i>
+              <i class="linux icon"></i>
+            </p>
+            <!--<p><a href="#">Поддерживаемые операционные системы</a></p>-->
+          </div>
+        </div> <!-- grid -->
+
       </div>
-    </div>
+      <div class="eight wide column">
 
-    <div class="stretched row">
-      <div class="seven wide column">
-        <div class="ui segment">
-          {% include image src="6.png" class="centered" %}
-          <h4 class="ui header">Геоинформационные системы</h4>
-          <p>
-            Делали карты с метаданными. По ним пользователи ищут участки 12 соток не дальше 300 метров от озера и 30 километров от Москвы.
-          </p>
-        </div>
+        <div class="ui one column padded grid">
+          <div class="column">
+            <h3 class="ui center aligned icon header">
+              Устройства
+            </h3>
+            <p>Рисуем и анимируем интерфейс, создаем драйверы и библиотеки, реализовываем протоколы, работаем с железом и сетью.</p>
+            <p>Устройство не обязательно. Мы можем сделать прототип для эмулятора или готовой платы Raspberry Pi. Когда устройство появится, допишем платформозависимый код.</p>
+            <p>Используем готовые Линукс-дистрибутивы, либо собираем дистрибутив для нового устройства.</p>
+          </div>
+          <div class="center aligned column">
+            <!--<a href="#">Поддерживаемые платформы</a>-->
+          </div>
+        </div> <!-- grid -->
 
-        <div class="ui segment">
-          {% include image src="8.png" %}
-          <h4 class="ui header">Телеприставки</h4>
-          <p>
-            Делали интерфейсы для телеприставок. Продумывали пользовательские сценарии, проектировали взаимодействие, верстали макеты экранов, сопровождали разработку и внедрение.
-          </p>
-        </div>
       </div>
+    </div> <!-- row -->
 
-      <div class="seven wide column">
-        <div class="ui segment">
-          {% include image src="7.png" %}
-          <h4 class="ui header">Обучение пилотов</h4>
-          <p>
-            2 года работы в проекте наземного обучения пилотов. Делали виртуальную модель кабины пилота, обучающие курсы, инструменты для их редактирования. Редактор курсов помогал одновременно писать курсы и сразу видеть их в интерфейсе.
-          </p>
-        </div>
-
-        <div class="ui segment">
-          {% include image src="9.png" %}
-          <h4 class="ui header">Платежные киоски</h4>
-          <p>
-            1,5 года разработки платежных киосков. Делали так, чтобы киоск мог обращаться с купюрами и выводить интерфейс на экран.
-          </p>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 
-<div class="ui vertical stripe technologies inverted segment">
-  <div class="ui middle aligned grid container">
-    <div class="left aligned row">
-      <div class="four wide column">
-        <h2 class="ui inverted huge header">Qt</h2>
-      </div>
-      <div class="four wide column">
-        <h2 class="ui inverted huge header">C++</h2>
-      </div>
-      <div class="four wide column">
-        <h2 class="ui inverted huge header">JS</h2>
-      </div>
-      <div class="four wide column">
-        <h2 class="ui inverted huge header">QML</h2>
+
+
+<div class="ui vertical basic segment" style="padding: 100px 0;">
+  <div class="ui stackable grid container">
+    <div class="ten wide middle aligned column engnr description">
+
+      <h2 class="ui header">
+        Нарисуем дизайн &rarr; напишем код &rarr; протестируем результат &rarr;
+        упакуем в дистрибутив &rarr; развернем на устройстве &rarr; 
+        позаботимся об обновлении.
+      </h2>
+
+    </div>
+
+    <div class="five wide right floated column">
+      <div class="ui raised segment engnr note">
+        <ol class="ui list">
+          <li value="—">В бургерной встречаются с друзьями.</li>
+          <li value="—">В ванной перегорела лампочка.</li>
+          <li value="—">В рюмочной закусывают.</li>
+          <li value="—">В мастерской починят часы.</li>
+          <li value="—">В Инженерной создадут приложение.</li>
+        </ol>
       </div>
     </div>
 
-    <div class="sixteen wide column">
-      <h3 class="ui inverted header">Пишем код на Qt и C++</h3>
-    </div>
 
-    <div class="row">
-      <div class="twelve wide column">
-        <p>
-          Делаем анимированные интерфейсы на QML и JavaScript. Налаживаем
-          общение клиента с сервером по RESTful API. Пишем документацию.
-        </p>
-
-        {% include image src="10.png" %}
-        <h4 class="ui inverted header">Работаем по эджайлу</h4>
-        <p>
-          Делим проект на короткие итерации. Для них планируем функционал, отводим
-          время на дизайн и согласование, разработку и отладку. Следим за сроками.
-        </p>
-
-        <p>
-          Поддерживаем прозрачный процесс разработки. Даем доступ к системе управления
-          проектами. Заказчик всегда может посмотреть статус любых задач. Общаемся
-          по телефону, почте, чату и лично.
-        </p>
-
-        <p>
-          После каждой итерации получается законченный продукт. Им сразу могут
-          пользоваться люди. А заказчик сразу получает заказы и обратную связь.
-        </p>
-
-        <p>
-          Следующие итерации можно отложить, чтобы получить достаточно фидбека.
-          Это поможет лучше понять пользователей, продумать FIXME
-        </p>
-
-        <h4 class="ui inverted header">Практикуем непрерывную интеграцию</h4>
-        <p>
-        Покрываем код тестами и собираем приложение несколько раз в день.
-        Это помогает быстрее находить и исправлять ошибки. Новые функции не ломают
-        работающее приложение.
-        </p>
-
-        <p>
-        Автоматизируем рутину, чтобы сосредоточиться на задачах. Благодаря
-        непрерывной интеграции и автоматическим тестам уменьшаем стоимость поддержки.
-        </p>
-      </div>
-
-      <div class="four wide column">
-        <div class="ui inverted mini list">
-          <div class="item">
-            <div class="header">Работаем с модулями</div>
-          </div>
-          <div class="item">Qt Multimedia</div>
-          <div class="item">Network</div>
-          <div class="item">Quick</div>
-          <div class="item">SQL</div>
-          <div class="item">QML</div>
-        </div>
-
-        <div class="ui inverted mini list">
-          <div class="item">
-            <div class="header">и дополнениями</div>
-          </div>
-          <div class="item">Concurrent</div>
-          <div class="item">D-Bus</div>
-          <div class="item">Print Support</div>
-          <div class="item">Serial Port</div>
-          <div class="item">Web-модулями</div>
-          <div class="item">XML</div>
-          <div class="item">Virtual Keyboard</div>
-          <div class="item">Serial Bus</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<div class="ui vertical stripe request segment">
-  <div class="ui top aligned grid container">
-    <div class="sixteen wide column">
-      <h3 class="ui header">Заявка на разработку</h3>
-    </div>
-
-    <div class="sixteen wide column">
-      <div class="ui form">
-        <div class="field">
-          <label>Номер телефона или электропочта</label>
-          <div class="ui grid">
-            <div class="seven wide column">
-              <div class="ui massive input">
-                <input type="text" placeholder="495 111 11 11" />
-              </div>
-            </div>
-            <div class="four wide column">
-              <small>Свяжемся с вами и обсудим первый шаг сотрудничества</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="ui large secondary submit button">Отправить</div>
-      </div>
-    </div>
   </div>
 </div>
+
+
+<div class="ui vertical center aligned very padded segment engnr mission">
+  <h1>Делаем устройства умными</h1>
+</div>
+
+<script>
+  $("#main-title")
+     .transition({
+         animation : 'fade in',
+         duration: '1s'
+       })
+  ;
+
+  $("#main-description")
+     .transition({
+         animation : 'fade in',
+         duration: '1s'
+       })
+  ;
+</script>
