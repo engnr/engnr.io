@@ -28,3 +28,7 @@ markdown: kramdown
 exclude:
   - packages.json
   - node_modules
+  - semantic.json
+  - semantic/src/
+  - semantic/gulpfile.js
+  - semantic/tasks/
