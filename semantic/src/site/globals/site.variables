@@ -23,7 +23,7 @@
 @primaryColor : #13e6b2;
 @secondaryColor : #82F0D4;
 
-//@linkColor           : #ddd;
+@linkColor           : rgb(66, 139, 202);
 //@linkUnderline       : none;
 //@linkHoverColor      : lighten( @linkColor, 5);
 //@linkHoverUnderline: underline;
