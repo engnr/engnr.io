@@ -98,11 +98,21 @@ body {
   //#1E7C69);
 }
 
-.ui.text.menu, .ui.text.menu .item {
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-}
+.ui.text.menu > a.item {
+  display: inline !important;
+  margin: 0px 1em;
+  padding: 2px 0px;
+  border-color: rgba(0, 30, 15, .3) !important;
+  border-bottom: 1px solid;
 
+  &:hover {
+    border-color: rgba(0, 30, 15, .8) !important;
+  }
+
+  &.active {
+    border-bottom: 0px;
+  }
+}
 
 #title a, #phone a, #title a:hover, #phone a:hover {
   text-decoration: none;

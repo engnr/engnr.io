@@ -1,19 +1,21 @@
 <div class="ui grid container">
   <div class="middle aligned row">
-    <div class="six wide column" id="title">
-      <h1 class="ui header"><a href="/">{{ site.title }}</a></h1>
+    <div class="five wide column" id="title">
+      {% unless page.url == "/" %}
+        <h1 class="ui header engnr title"><a href="/">{{ site.title }}</a></h1>
+      {% endunless %}
     </div>
-    <div class="five wide column">
-      <div class="ui four item text small menu" id="menu">
-        <!--
-        <a class="item" href="#">Блог</a>
+    <div class="eleven wide right aligned column">
+      <div class="ui text menu">
+    <!--
+        <a class="active teal item">Компания</a>
+        <a class="item">Вакансии</a>
+        <a class="item">Мероприятия</a>
+        <a class="item">Блог</a>
         -->
+        <a class="right floated item" href="mailto:{{ site.email }}">Связаться с Инженерной</a>
       </div>
-    </div>
-    <div class="four wide right aligned column" id="phone">
-      <h2 class="ui header"><a href="tel:{{ site.email }}">{{ site.email }}</a></h2>
     </div>
   </div>
 </div>
-
 
