@@ -2,8 +2,7 @@
      User Global Variables
 *******************************/
 
-@emSize: 18px;
-@fontSize : 16px;
+@emSize: 16px;
 
 @h1: 3.25em;
 @h2 : 1.714rem;
@@ -24,7 +23,8 @@
 @secondaryColor : #82F0D4;
 
 @linkColor           : rgb(66, 139, 202);
-//@linkUnderline       : none;
+@linkUnderline       : none;
 //@linkHoverColor      : lighten( @linkColor, 5);
-//@linkHoverUnderline: underline;
+//@linkHoverColor      : @red;
+@linkHoverUnderline  : none;
 
