@@ -9,60 +9,7 @@ $visitedLinkUnderlineColor: rgba(106, 39, 149, 0.2);
 $hoverLinkColor: rgb(219, 40, 40);
 $hoverLinkUnderlineColor: rgba(219, 40, 40, 0.2);
 
-
-//@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
-
-.engnr.technologies {
-  font-size: 2.8em;
-}
-
 $light-teal: #E8FCF7;
-
-@mixin linear-gradient($top_color, $bottom_color) {
-  /* IE10+ */ 
-  background-image: -ms-linear-gradient(top, $top_color 0%, $bottom_color 100%) !important;
-
-  /* Mozilla Firefox */ 
-  background-image: -moz-linear-gradient(top, $top_color 0%, $bottom_color 100%) !important;
-
-  /* Opera */ 
-  background-image: -o-linear-gradient(top, $top_color 0%, $bottom_color 100%) !important;
-
-  /* Webkit (Safari/Chrome 10) */ 
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $top_color), color-stop(100, $bottom_color)) !important;
-
-  /* Webkit (Chrome 11+) */ 
-  background-image: -webkit-linear-gradient(top, $top_color 0%, $bottom_color 100%) !important;
-
-  /* W3C Markup */ 
-  background-image: linear-gradient(to bottom, $top_color 0%, $bottom_color 100%) !important;
-}
-
-.experience {
-  @include linear-gradient(#37C1AA, #64EFCE);
-}
-
-.experience .ui.segment{
-  border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-  -webkit-border-radius: 10px 10px 10px 10px;
-  border: 0px solid #000000;
-}
-
-.technologies {
-  @include linear-gradient(#1A534B, #1E7C69);
-
-  h2, h3 {
-    font-weight: bold !important;
-  }
-  h2 {
-    font-size: 5rem !important;
-  }
-}
-
-.request {
-  background-color: $light-teal !important;
-}
 
 h1, h3 {
   font-weight: bold !important;
@@ -72,13 +19,55 @@ body {
   padding: 20px 0px;
 }
 
+a {
+  padding-bottom: 0px;
+  border-bottom: 1px solid;
+  color: $linkColor;
+  border-color: $linkUnderlineColor;
+  line-height: 20px;
+
+  &:hover, &:visited:hover {
+    text-decoration: none;
+    color: $hoverLinkColor;
+    border-color: $hoverLinkUnderlineColor;
+  }
+  &:visited {
+    color: $visitedLinkColor;
+    border-color: $visitedLinkUnderlineColor;
+    text-decoration: none;
+  }
+}
+
+
+#main-title, #main-description {
+  visibility: hidden;
+}
+
+#description {
+  padding: 50px 0;
+  margin-bottom: 1em;
+  h2 {
+    font-size: 30px !important;
+  }
+}
+
+
 .ui.secondary.button {
   color: #1A534B;
-  //#1E7C69);
+}
+
+.masthead.segment {
+  min-height: 550px;
+  padding: 1em 0em;
+}
+
+.masthead h1.ui.header {
+  margin-top: 2em;
 }
 
 .ui.text.menu > a.item {
   display: inline !important;
+  font-size: 18px;
   margin: 0px 1em;
   padding: 2px 0px;
   border-color: rgba(0, 30, 15, .3) !important;
@@ -93,14 +82,13 @@ body {
   }
 }
 
-#title a, #phone a, #title a:hover, #phone a:hover {
-  text-decoration: none;
-  color: #000;
+.engnr.note {
+  font-size: 14px !important;
+  color: #888;
 }
 
-#description {
-  margin-bottom: 1em;
+.engnr.mission {
+  padding: 100px 0px !important;
 }
 
-//@import "engnr";
 
