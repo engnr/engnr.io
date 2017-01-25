@@ -9,6 +9,10 @@
   <script src="{{ site.baseurl }}/semantic/dist/semantic.min.js"></script>
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/main.css">
   <title>{{ site.title }}</title>
+
+  {% if jekyll.environment == "production" %}
+    {% include google_analytics.html %}
+  {% endif %}
 </head>
 <body>
   {% include header.html %}
