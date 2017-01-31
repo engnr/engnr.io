@@ -131,6 +131,12 @@ description: "Создаем приложения для компьютеров,
       </div>
     </div>
 
+    <div class="row">
+      <div class="twelve wide centered column">
+        <div class="ui embed" data-source="youtube" data-id="CjyjEUFn_FI" data-placeholder="/images/youtube-max.jpg"></div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -152,4 +158,13 @@ description: "Создаем приложения для компьютеров,
          duration: '1s'
        })
   ;
+
+  $('.ui.embed').embed({
+    parameters: {
+      rel: 0,
+      showinfo: 0,
+      iv_load_policy: 3,
+      modestbranding: 0
+    }
+  });
 </script>
