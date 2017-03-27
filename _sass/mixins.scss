@@ -1,0 +1,17 @@
+@mixin container {
+  @include center;
+  max-width: $pageWidth;
+}
+
+@mixin wide-container {
+  @include center;
+  max-width: $pageWideWidth;
+}
+
+@mixin one-column-container {
+  @include column(12/16, $offset: 2/16);
+}
+
+@mixin two-column-container {
+  @include column(1/2, $cycle: 2, $gutter: 0);
+}
