@@ -23,12 +23,11 @@ phone:
   link: "+74951111111"
   text: "495 111 11 11"
 
+assets:
+  semantic: /assets/semantic-css
+  semantic-components: /assets/semantic-css/components
+
 # Build settings
 markdown: kramdown
 exclude:
-  - packages.json
   - node_modules
-  - semantic.json
-  - semantic/src/
-  - semantic/gulpfile.js
-  - semantic/tasks/
