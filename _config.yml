@@ -30,6 +30,9 @@ assets:
   js: /assets/js
 
 
+sass:
+  style: compressed
+
 # Build settings
 markdown: kramdown
 exclude:
