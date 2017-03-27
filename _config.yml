@@ -23,6 +23,9 @@ phone:
   link: "+74951111111"
   text: "495 111 11 11"
 
+gems:
+  - jekyll-redirect-from
+
 assets:
   semantic: /assets/semantic-css
   semantic-components: /assets/semantic-css/components
