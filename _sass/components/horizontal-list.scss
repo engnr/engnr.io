@@ -1,0 +1,48 @@
+@mixin icon {
+  @include fa-icon;
+  margin-right: 24px;
+}
+
+.horizontal-list {
+
+  > .item {
+    @include column(1/4, $cycle: 4);
+
+    text-align: center;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    display: inline;
+
+    &:first-child {
+      text-align: left;
+    }
+
+    &:last-child {
+      text-align: right;
+    }
+
+    &.-massive {
+      font-size: 5rem !important;
+      font-weight: 600;
+    }
+  }
+
+  > .icon {
+    &.-windows {
+      @include icon;
+      &:before { content: $fa-var-windows; }
+    }
+
+    &.-mac {
+      @include icon;
+      &:before { content: $fa-var-apple; }
+    }
+
+    &.-linux {
+      @include icon;
+      &:before { content: $fa-var-linux; }
+    }
+  }
+
+}
+

@@ -1,0 +1,9 @@
+.page-footer {
+  padding-top: $mediumSpacer;
+  padding-bottom: $mediumSpacer;
+  border-top: 1px solid $light-grey;
+
+  > .container {
+    @include wide-container;
+  }
+}
