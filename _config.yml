@@ -26,6 +26,8 @@ phone:
 assets:
   semantic: /assets/semantic-css
   semantic-components: /assets/semantic-css/components
+  css: /assets/css
+
 
 # Build settings
 markdown: kramdown
