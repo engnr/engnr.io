@@ -1,5 +1,3 @@
-$mastheadBackground: linear-gradient(90deg, $teal 0%, $blueprint 40%, $dark-violet 90%);
-
 .page-segment {
 
   > .container {
@@ -14,8 +12,7 @@ $mastheadBackground: linear-gradient(90deg, $teal 0%, $blueprint 40%, $dark-viol
   &.-masthead {
     padding-top: $bigSpacer;
     padding-bottom: $bigSpacer;
-    background: $mastheadBackground;
-    visibility: none;
+    background: linear-gradient(90deg, $teal 0%, $blueprint 40%, $dark-violet 90%);
 
     > .container > .title {
       font-weight: $thinFont;
