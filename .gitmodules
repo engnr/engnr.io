@@ -1,3 +1,6 @@
 [submodule "assets/Semantic-UI-CSS"]
 	path = assets/semantic-css
 	url = https://github.com/Semantic-Org/Semantic-UI-CSS.git
+[submodule "_sass/jeet"]
+	path = _sass/jeet
+	url = https://github.com/mojotech/jeet
