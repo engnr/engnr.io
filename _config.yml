@@ -27,6 +27,7 @@ assets:
   semantic: /assets/semantic-css
   semantic-components: /assets/semantic-css/components
   css: /assets/css
+  js: /assets/js
 
 
 # Build settings
