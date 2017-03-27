@@ -1,170 +1,91 @@
 ---
 layout: default
-description: "Создаем приложения для компьютеров,<br />интернета&nbsp;вещей и умных устройств"
+description: "Создаем приложения для&nbsp;компьютеров<br /> и умных&nbsp;устройств"
 ---
 
-<div class="ui vertical inverted middle aligned masthead basic segment">
-  <div class="ui grid container" id="description">
-
-    <div class="ten wide column">
-      <h1 class="ui inverted header" id="main-title">Инженерная</h1>
-      <h2 class="ui inverted header" id="main-description">{{ page.description }}</h2>
-    </div>
+<div class="page-segment -masthead _fadeIn">
+  <div class="container">
+    <h1 class="title">{{ page.description }}</h1>
   </div>
-
 </div>
 
+<div class="page-segment -padded">
+  <div class="container">
+    <div class="text-block -two">
+      <h3 class="_center">Настольные компьютеры</h3>
+      <p>Пишем кроссплатформенные утилиты, десктопные клиенты,
+      специализированное ПО. Приложения можем сделать расширяемыми через
+      скрипты или плагины.
+      </p>
 
-<div class="ui vertical basic segment" style="margin-top: 100px">
-  <div class="ui grid container">
+      <p>
+      Программы запускаются под Виндоусом, Маком и Линуксом.
+      Разрабатывать одну кодовую базу дешевле, чем портировать и поддерживать приложение под каждую платформу.</p>
+      <p class="horizontal-list _center">
+        <i class="icon -windows"></i>
+        <i class="icon -mac"></i>
+        <i class="icon -linux"></i>
+      </p>
+      <!--p class="_center"><a href="#">Поддерживаемые операционные системы</a></p -->
+    </div>
 
-    <div class="row">
-      <div class="eight wide column">
 
-        <div class="ui one column padded grid">
-          <div class="column">
-            <h3 class="ui aligned icon header">
-              Настольные компьютеры
-            </h3>
-            <p>Пишем кроссплатформенные утилиты, десктопные клиенты,
-            специализированное ПО. Приложения можем сделать расширяемыми через
-            скрипты или плагины.
-            </p>
-
-            <p>
-            Программы запускаются под Виндоусом, Маком и Линуксом.
-            Разрабатывать одну кодовую базу дешевле, чем портировать и поддерживать приложение под каждую платформу.</p>
-
-          </div>
-          <div class="center aligned column">
-            <p class="ui center aligned">
-              <i class="windows icon"></i>
-              <i class="apple icon"></i>
-              <i class="linux icon"></i>
-            </p>
-            <!--<p><a href="#">Поддерживаемые операционные системы</a></p>-->
-          </div>
-        </div> <!-- grid -->
-
-      </div>
-      <div class="eight wide column">
-
-        <div class="ui one column padded grid">
-          <div class="column">
-            <h3 class="ui center aligned icon header">
-              Устройства
-            </h3>
-            <p>Рисуем и анимируем интерфейс, создаем драйверы и библиотеки, реализовываем протоколы, работаем с железом и сетью.</p>
-            <p>Устройство не обязательно. Мы можем сделать прототип для эмулятора или готовой платы Raspberry Pi. Когда устройство появится, допишем платформозависимый код.</p>
-            <p>Используем готовые Линукс-дистрибутивы, либо собираем дистрибутив для нового устройства.</p>
-          </div>
-          <div class="center aligned column">
-            <!--<a href="#">Поддерживаемые платформы</a>-->
-          </div>
-        </div> <!-- grid -->
-
-      </div>
-    </div> <!-- row -->
-
+    <div class="text-block -two">
+      <h3 class="_center">Устройства</h3>
+      <p>Рисуем и анимируем интерфейс, создаем драйверы и библиотеки, реализовываем протоколы, работаем с железом и сетью.</p>
+      <p>Устройство не обязательно. Мы можем сделать прототип для эмулятора или готовой платы Raspberry Pi. Когда устройство появится, допишем платформозависимый код.</p>
+      <p>Используем готовые Линукс-дистрибутивы либо собираем дистрибутив для нового устройства.</p>
+      <!--p class="_center"><a href="#">Поддерживаемые платформы</a></p -->
+    </div>
   </div>
 </div>
 
 
 
-<div class="ui vertical basic segment" style="padding: 100px 0;">
-  <div class="ui stackable grid container">
-    <div class="ten wide middle aligned column engnr description">
+<div class="page-segment -padded">
+  <div class="container">
+    <ol class="engnr-process">
+      <li class="item">Нарисуем дизайн</li>
+      <li class="item">напишем код</li>
+      <li class="item">протестируем результат</li>
+      <li class="item">упакуем в дистрибутив</li>
+      <li class="item">развернем на устройстве</li>
+      <li class="item">позаботимся об обновлении</li>
+    </ol>
+  </div>
+</div>
 
-      <h2 class="ui header">
-        Нарисуем дизайн &rarr; напишем код &rarr; протестируем результат &rarr;
-        упакуем в дистрибутив &rarr; развернем на устройстве &rarr; 
-        позаботимся об обновлении.
-      </h2>
 
+<div class="page-segment -padded -divided -green">
+  <div class="container">
+
+    <div class="horizontal-list -massive">
+      <h2 class="item -massive">Qt</h2>
+      <h2 class="item -massive">C++</h2>
+      <h2 class="item -massive">JS</h2>
+      <h2 class="item -massive">QML</h2>
     </div>
 
-    <div class="five wide right floated column">
-      <div class="ui raised segment engnr note">
-        <ol class="ui list">
-          <li value="—">В бургерной встречаются с друзьями.</li>
-          <li value="—">В ванной перегорела лампочка.</li>
-          <li value="—">В рюмочной закусывают.</li>
-          <li value="—">В мастерской починят часы.</li>
-          <li value="—">В Инженерной создадут приложение.</li>
-        </ol>
-      </div>
-    </div>
+    <div class="text-block -one">
+      <p>
+        Основной язык программирования — C++. На нем мы пишем логику приложения,
+        оптимизируем вычисления и графику, общаемся с железом.
+      </p>
 
+      <p>
+        Работаем с фреймворком Qt версии 4 и 5. Интерфейс делаем на Qt Quick и виджетах.
+      </p>
+      <p>
+        <div class="ui embed" data-source="youtube" data-id="CjyjEUFn_FI" data-placeholder="/assets/images/youtube-max.jpg"></div>
+      <p>
+    </div>
 
   </div>
 </div>
 
 
-<div class="ui vertical very padded green technologies segment">
-  <div class="ui grid container">
-
-    <div class="left aligned row">
-      <div class="four wide column">
-        <h2 class="ui huge header">Qt</h2>
-      </div>
-      <div class="four wide center aligned column">
-        <h2 class="ui huge header">C++</h2>
-      </div>
-      <div class="four wide center aligned column">
-        <h2 class="ui huge header">JS</h2>
-      </div>
-      <div class="four wide right aligned column">
-        <h2 class="ui huge header">QML</h2>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="twelve wide centered column">
-        <p>
-          Основной язык программирования — C++. На нем мы пишем логику приложения,
-          оптимизируем вычисления и графику, общаемся с железом.
-        </p>
-
-        <p>
-          Работаем с фреймворком Qt версии 4 и 5. Интерфейс делаем на Qt Quick и виджетах.
-        </p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="twelve wide centered column">
-        <div class="ui embed" data-source="youtube" data-id="CjyjEUFn_FI" data-placeholder="/images/youtube-max.jpg"></div>
-      </div>
-    </div>
-
+<div class="page-segment -divided">
+  <div class="container">
+    <h1 class="engnr-mission">Делаем устройства умными</h1>
   </div>
 </div>
-
-<div class="ui vertical center aligned very padded segment engnr mission">
-  <h1>Делаем устройства умными</h1>
-</div>
-
-<script>
-  $("#main-title")
-     .transition({
-         animation : 'fade in',
-         duration: '1s'
-       })
-  ;
-
-  $("#main-description")
-     .transition({
-         animation : 'fade in',
-         duration: '1s'
-       })
-  ;
-
-  $('.ui.embed').embed({
-    parameters: {
-      rel: 0,
-      showinfo: 0,
-      iv_load_policy: 3,
-      modestbranding: 0
-    }
-  });
-</script>
