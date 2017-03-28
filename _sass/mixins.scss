@@ -15,3 +15,13 @@
 @mixin two-column-container {
   @include column(1/2, $cycle: 2, $gutter: 0);
 }
+
+@mixin sizes {
+  &.-mini     { font-size: $mini; }
+  &.-tiny     { font-size: $tiny; }
+  &.-small    { font-size: $small; }
+  &.-large    { font-size: $large; }
+  &.-big      { font-size: $big; }
+  &.-huge     { font-size: $huge; }
+  &.-massive  { font-size: $massive; }
+}

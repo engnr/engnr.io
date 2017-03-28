@@ -7,11 +7,13 @@
 
   > .item {
     @include column(1/4, $cycle: 4);
+    @include sizes;
 
     text-align: center;
     margin-top: 0.4em;
     margin-bottom: 0.4em;
     display: inline;
+    font-weight: 600;
 
     &:first-child {
       text-align: left;
@@ -19,11 +21,6 @@
 
     &:last-child {
       text-align: right;
-    }
-
-    &.-massive {
-      font-size: 5rem !important;
-      font-weight: 600;
     }
   }
 
