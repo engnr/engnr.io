@@ -1,9 +1,6 @@
-@mixin icon {
-  @include fa-icon;
-  margin-right: 24px;
-}
-
 .horizontal-list {
+
+  @include icons;
 
   > .item {
     @include column(1/4, $cycle: 4);
@@ -23,23 +20,5 @@
       text-align: right;
     }
   }
-
-  > .icon {
-    &.-windows {
-      @include icon;
-      &:before { content: $fa-var-windows; }
-    }
-
-    &.-mac {
-      @include icon;
-      &:before { content: $fa-var-apple; }
-    }
-
-    &.-linux {
-      @include icon;
-      &:before { content: $fa-var-linux; }
-    }
-  }
-
 }
 
