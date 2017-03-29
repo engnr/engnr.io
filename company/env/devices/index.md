@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Платформы
+category: env
+title: Устройства
 description: >
   На устройствах мы используем Boot to Qt
   — готовый Линукс-стек для встраиваемых систем.
