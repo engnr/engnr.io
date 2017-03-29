@@ -17,7 +17,7 @@ layout: compress
 
   <link rel="stylesheet" type="text/css" href="{{ site.assets.semantic-components }}/icon.css">
 
-  <link rel="stylesheet" type="text/css" href="{{ site.assets.css }}/main.css">
+  <link rel="stylesheet" type="text/css" href="{{ "/main.css" | prepend: site.assets.css }}?{{site.time | date: '%s%N'}}">
 
   <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-32x32.png" sizes="32x32">
