@@ -12,7 +12,8 @@
 
 
     <div class="links">
-    {% for item in site.pages %}
+    {% assign pages = site.pages | sort: "title" %}
+    {% for item in pages %}
     {% if item.category == page.category and item.main_page != true %}
 
       <a class="item{% if page.url == item.url %} -active{% endif %}"
