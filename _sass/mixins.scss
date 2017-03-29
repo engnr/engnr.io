@@ -1,3 +1,7 @@
+@mixin narrow-container {
+  @include center;
+  max-width: $minPageWidth;
+}
 @mixin container {
   @include center;
   max-width: $pageWidth;
