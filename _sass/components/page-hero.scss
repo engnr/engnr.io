@@ -1,5 +1,6 @@
 .page-hero {
   @extend .page-segment;
+  margin-top: $bigSpacer;
 
   > .container > .title {
     @extend .h1;
