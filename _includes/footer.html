@@ -1,4 +1,10 @@
-<footer class="page-footer">
+
+{% if page.padded_footer == false %}
+  <footer class="page-footer">
+{% else %}
+  <footer class="page-footer -padded">
+{% endif %}
+
   <div class="container">
     <small>&copy; Инженерная, 2016–2017</small>
   </div>

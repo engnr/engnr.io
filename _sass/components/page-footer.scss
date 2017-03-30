@@ -1,8 +1,11 @@
 .page-footer {
-  margin-top: $bigSpacer;
   padding-top: $mediumSpacer;
   padding-bottom: $mediumSpacer;
   border-top: 1px solid $light-grey;
+
+  &.-padded {
+    margin-top: $bigSpacer;
+  }
 
   > .container {
     @include wide-container;
