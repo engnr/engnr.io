@@ -3,13 +3,10 @@
     <a class="brand" href="/">{{ site.title }}</a>
 
     <div class="links">
-      <!--
-      <a class="item -active" href="#">Компания</a>
-      <a class="item" href="#">Вакансии</a>
-      <a class="item" href="#">Мероприятия</a>
-      <a class="item" href="#">Блог</a>
-      -->
-      <a class="item" href="mailto:{{ site.email }}">Связаться с Инженерной</a>
+      {% for item in site.data.main-nav %}
+      <a class="item{% if page.url == item.url %} -active{% endif %}"
+         href="{{ item.url }}">{{ item.title }}</a>
+      {% endfor %}
     </div>
   </div>
 </nav>
