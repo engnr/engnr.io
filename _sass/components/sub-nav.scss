@@ -3,18 +3,19 @@
   border-bottom: 1px solid $very-light-grey;
 
   > .container {
-    @include container;
+    @include narrow-container;
     position: relative;
   }
 
   > .container > .header {
-    @extend h4;
+    @extend h5;
     font-weight: $mediumFont;
     display: inline;
     line-height: 20px;
   }
 
   .container > .links {
+    @extend .h6;
     position: absolute;
     right: 0;
     display: inline;
