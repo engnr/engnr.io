@@ -1,6 +1,7 @@
 ---
 layout: page
 category: env
+navigation_group: company
 title: Операционные системы
 description: >
   Наши приложения запускаются под Виндоусом, Маком и Линуксом.

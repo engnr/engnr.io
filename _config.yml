@@ -59,3 +59,4 @@ defaults:
       type: posts
     values:
       layout: post
+      navigation_group: blog

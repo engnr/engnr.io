@@ -1,6 +1,7 @@
 ---
 layout: page
 category: env
+navigation_group: company
 title: Устройства
 description: >
   На устройствах мы используем Boot to Qt
