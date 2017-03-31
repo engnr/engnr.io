@@ -46,7 +46,16 @@ assets:
 sass:
   style: compressed
 
+permalink: /blog/:title/
+
 # Build settings
 markdown: kramdown
 exclude:
   - node_modules
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
