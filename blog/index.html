@@ -7,6 +7,23 @@ title: Инженерный блог
   {% for post in site.posts %}
     <div class="post-item">
       <h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+      <ul class="meta-list">
+        <li class="item -date">
+          <time datetime="{{ post.date | date: "%F" }}">
+            {% include date-string.html date=post.date %}
+          </time>
+        </li>
+        {% if post.author %}
+          <li class="item -author">{{ post.author }}</li>
+        {% endif %}
+        {% if post.category %}
+          <li class="item -category">
+            {% include category.html category=post.category %}
+          </li>
+        {% endif %}
+      </ul>
+
       <div class="content">
         {{ post.content }}
       </div>
