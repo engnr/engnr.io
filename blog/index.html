@@ -3,11 +3,13 @@ layout: page
 title: Инженерный блог
 ---
 
-<div class="blog-feed">
+<div class="post-feed">
   {% for post in site.posts %}
-    <h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <div class="content">
-      {{ post.content }}
+    <div class="post-item">
+      <h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <div class="content">
+        {{ post.content }}
+      </div>
     </div>
   {% endfor %}
 </div>
