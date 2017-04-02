@@ -1,0 +1,63 @@
+---
+layout: page
+title: События
+---
+
+{% assign events = site.events | sort: "start_date" | reverse %}
+
+<div class="event-feed">
+{% for event in events %}
+  {% if event.start_date != nil %}
+    <div class="event-item">
+      <h2>{{ event.title }}</h2>
+
+      <ul class="meta-list -vertical">
+        {% if event.location %}
+          <li class="item -location">{{ event.location }}</li>
+        {% endif %}
+
+        <li class="item -date">{% include date-range.html
+            start_date=event.start_date
+            end_date=event.end_date %}
+        </li>
+        {% if event.start_time and event.end_time %}
+        <li class="item -time">{% include time-range.html
+            start_time=event.start_time
+            end_time=event.end_time %}</li>
+        {% endif %}
+
+        {% if event.coach %}
+          <li class="item -author">{{ event.coach }}</li>
+        {% endif %}
+
+        {% if event.price %}
+          <li class="item -price">{{ event.price }}</li>
+        {% endif %}
+      </ul>
+
+      <div class="content">{{ event.description }}</div>
+      <div class="content">{{ event.content }}</div>
+
+    </div>
+
+  {% endif %}
+{% endfor %}
+
+{% for event in events %}
+  {% if event.start_date == nil %}
+  <div class="event-item">
+    <h2>{{ event.title }}</h2>
+
+    <ul class="meta-list -vertical">
+      <li class="item -opendate">Открытая дата</li>
+      {% if event.coach %}
+        <li class="item -author">{{ event.coach }}</li>
+      {% endif %}
+    </ul>
+
+    <div class="content">{{ event.description }}</div>
+    <div class="content">{{ event.content }}</div>
+  </div>
+  {% endif %}
+{% endfor %}
+</div>

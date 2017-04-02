@@ -53,6 +53,10 @@ markdown: kramdown
 exclude:
   - node_modules
 
+collections:
+  events:
+    output: false
+
 defaults:
   - scope:
       path: ""
@@ -60,3 +64,9 @@ defaults:
     values:
       layout: post
       navigation_group: blog
+  - scope:
+      path: ""
+      type: events
+    values:
+      permalink: /:collection/:title/
+      navigation_group: events
