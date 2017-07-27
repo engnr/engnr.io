@@ -23,6 +23,7 @@ phone:
   link: "+74951111111"
   text: "495 111 11 11"
 
+theme: engnr-theme
 gems:
   - jekyll-redirect-from
 
