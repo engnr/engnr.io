@@ -1,6 +1,7 @@
 GIT
   remote: https://github.com/engnr/engnr-theme
-  revision: 8a6838070be89fdc5fbc59b36f06ab4e99fc62c6
+  revision: d7968b3b3566e62b2c8266bb779edfe1f8950d1c
+  submodules: true
   specs:
     engnr-theme (0.1.0)
       jekyll (~> 3.4)
