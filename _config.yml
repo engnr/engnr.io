@@ -23,6 +23,15 @@ phone:
   link: "+74951111111"
   text: "495 111 11 11"
 
+integrations:
+  google_analytics:
+    id: 'UA-90938007-1'
+  yandex_metrika:
+    id: 42441234
+  intercom:
+    app_id: "gz5jgvs3"
+
+
 theme: engnr-theme
 gems:
   - jekyll-redirect-from
