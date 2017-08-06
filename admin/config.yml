@@ -4,6 +4,7 @@ backend:
   branch: master
 
 media_folder: "uploads"
+publish_mode: editorial_workflow
 
 collections:
   - name: settings
