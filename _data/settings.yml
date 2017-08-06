@@ -1,0 +1,9 @@
+navigation:
+  - title: Компания
+    url: /
+  - title: Вакансии
+    url: /company/jobs/
+  - title: Связаться с Инженерной
+    url: /company/contact/
+  # Мероприятия
+  # Блог
