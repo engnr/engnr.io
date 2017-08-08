@@ -1,10 +1,10 @@
 GIT
   remote: https://github.com/engnr/engnr-theme
-  revision: 7a60b52cb3d2e814c65ff381e646bb244158be6c
-  tag: v0.2
+  revision: 8d2fda22f16bfc8cf2d080ef055f503c89670a83
+  tag: v0.3
   submodules: true
   specs:
-    engnr-theme (0.2.0)
+    engnr-theme (0.3.0)
       jekyll (~> 3.4)
 
 GEM
