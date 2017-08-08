@@ -7,6 +7,16 @@ media_folder: "uploads"
 publish_mode: editorial_workflow
 
 collections:
+  - name: blog
+    label: Blog
+    folder: _posts
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+    - {label: "Category", name: "category", widget: "string"}
+    - {label: "Author", name: "author", widget: "string"}
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
   - name: settings
     label: Settings
     editor:
