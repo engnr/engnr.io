@@ -17,6 +17,20 @@ collections:
     - {label: "Author", name: "author", widget: "string"}
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Body", name: "body", widget: "markdown"}
+  - name: events
+    label: Events
+    folder: _events
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+    - { label: "Title", name: "title", widget: "string" }
+    - { label: "Description", name: "description", widget: "text" }
+    - { label: "Location", name: "location", widget: "string" }
+    - { label: "Start Date", name: "start_date", widget: "datetime" }
+    - { label: "End Date", name: "end_date", widget: "datetime" }
+    - { label: "Coach", name: "coach", widget: "string" }
+    - { label: "Price", name: "price", widget: "number" }
+    - { label: "Body", name: "body", widget: "markdown" }
   - name: settings
     label: Settings
     editor:
