@@ -6,3 +6,29 @@ description: >
   на <a href="mailto:team@engnr.io">team@engnr.io</a>.
 ---
 
+{% assign jobs = site.jobs | sort: "open_date" | reverse %}
+{% assign today = "now" | date: "%Y-%m-%d" %}
+
+<div class="post-feed">
+{% for job in jobs %}
+{% assign open = job.open_date | date: "%Y-%m-%d" %}
+{% assign close = job.close_date | date: "%Y-%m-%d" %}
+  {% if open <= today and close >= today %}
+    <div class="post-item">
+      <h2>{{ job.title }}</h2>
+        
+        <ul class="meta-list -vertical">
+          {% if job.job_type %}
+            <li class="item -briefcase">{{ job.job_type }}</li>
+          {% endif %}
+          {% if job.skills %}
+            <li class="item -tag">{{ job.skills | join: ", " }} </li>
+          {% endif %}
+        </ul>
+
+      <div class="content">{{ job.content }}</div>
+            
+    </div>
+
+  {% endif %}
+{% endfor %}
