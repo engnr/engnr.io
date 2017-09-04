@@ -31,6 +31,18 @@ collections:
     - { label: "Coach", name: "coach", widget: "string" }
     - { label: "Price", name: "price", widget: "number" }
     - { label: "Body", name: "body", widget: "markdown" }
+  - name: jobs
+    label: Jobs
+    folder: _jobs
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+    - { label: "Title", name: "title", widget: "string" }
+    - { label: "Job Type", name: "job_type", widget: "select", options: ["", Удалённая работа"], default: "", required: false }
+    - { label: "Open Date", name: "open_date", widget: "datetime", format: "YYYY-MM-DD" }
+    - { label: "Close Date", name: "close_date", widget: "datetime", format: "YYYY-MM-DD", required: false }
+    - { label: "Skills", name: "skills", widget: "list", required: false }
+    - { label: "Body", name: "body", widget: "markdown" }
   - name: settings
     label: Settings
     editor:
