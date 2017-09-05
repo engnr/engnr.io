@@ -15,7 +15,8 @@ ruby RUBY_VERSION
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", group: :jekyll_plugins
 gem "jekyll-redirect-from"
-gem "engnr-theme", :git => 'https://github.com/engnr/engnr-theme', :submodules => true, :tag => 'v0.3.3'
+gem "engnr-theme", :git => 'https://github.com/engnr/engnr-theme', :submodules => true, :tag => 'v0.3.4'
+#gem "engnr-theme", :path => '../engnr-theme', :submodules => true, :branch => 'master'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
