@@ -35,7 +35,7 @@ integrations:
 
 
 theme: engnr-theme
-gems:
+plugins:
   - jekyll-redirect-from
 
 assets:
