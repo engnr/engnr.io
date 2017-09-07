@@ -22,3 +22,5 @@ gem "engnr-theme", :git => 'https://github.com/engnr/engnr-theme', :submodules =
 group :jekyll_plugins do
   gem "jekyll-paginate"
  end
+
+gem "html-proofer"
