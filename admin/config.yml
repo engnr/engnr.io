@@ -8,56 +8,56 @@ publish_mode: editorial_workflow
 
 collections:
   - name: blog
-    label: Blog
+    label: Блог
     folder: _posts
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-    - {label: "Category", name: "category", widget: "string"}
-    - {label: "Author", name: "author", widget: "string"}
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "Body", name: "body", widget: "markdown"}
+    - { label: "Категория", name: "category", widget: "string"}
+    - { label: "Автор", name: "author", widget: "string"}
+    - { label: "Заголовок", name: "title", widget: "string"}
+    - { label: "Статья", name: "body", widget: "markdown"}
   - name: events
-    label: Events
+    label: События
     folder: _events
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-    - { label: "Title", name: "title", widget: "string" }
-    - { label: "Description", name: "description", widget: "text" }
-    - { label: "Location", name: "location", widget: "string" }
-    - { label: "Start Date", name: "start_date", widget: "datetime" }
-    - { label: "End Date", name: "end_date", widget: "datetime" }
-    - { label: "Coach", name: "coach", widget: "string" }
-    - { label: "Price", name: "price", widget: "number" }
-    - { label: "Body", name: "body", widget: "markdown" }
+    - { label: "Заголовок", name: "title", widget: "string" }
+    - { label: "Описание", name: "description", widget: "text" }
+    - { label: "Место проведения", name: "location", widget: "string" }
+    - { label: "Дата начала", name: "start_date", widget: "datetime" }
+    - { label: "Дата завершения", name: "end_date", widget: "datetime" }
+    - { label: "Тренер", name: "coach", widget: "string" }
+    - { label: "Цена", name: "price", widget: "number" }
+    - { label: "Статья", name: "body", widget: "markdown" }
   - name: jobs
-    label: Jobs
+    label: Вакансии
     folder: _jobs
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-    - { label: "Title", name: "title", widget: "string" }
-    - { label: "Job Type", name: "job_type", widget: "select", options: ["", Удалённая работа"], default: "", required: false }
-    - { label: "Open Date", name: "open_date", widget: "datetime", format: "YYYY-MM-DD" }
-    - { label: "Close Date", name: "close_date", widget: "datetime", format: "YYYY-MM-DD", required: false }
-    - { label: "Skills", name: "skills", widget: "list", required: false }
-    - { label: "Body", name: "body", widget: "markdown" }
+    - { label: "Заголовок", name: "title", widget: "string" }
+    - { label: "Тип работы", name: "job_type", widget: "select", options: ["", Удалённая работа"], default: "", required: false }
+    - { label: "Дата открытия", name: "open_date", widget: "datetime", format: "YYYY-MM-DD" }
+    - { label: "Дата закрытия", name: "close_date", widget: "datetime", format: "YYYY-MM-DD", required: false }
+    - { label: "Навыки", name: "skills", widget: "list", required: false }
+    - { label: "Статья", name: "body", widget: "markdown" }
   - name: settings
-    label: Settings
+    label: Настройки
     editor:
       preview: false
     files:
       - name: "general"
-        label: "Site settings"
+        label: Настройки сайта
         file: "_data/settings.yml"
-        description: "General Site Settings"
+        description: Основные настройки сайта
         fields:
           - name: navigation
-            label: Navigation
+            label: Навигация
             widget: list
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Url", name: "url", widget: "string" }
+              - { label: "Заголовок", name: "title", widget: "string" }
+              - { label: "Ссылка", name: "url", widget: "string" }
 
 
