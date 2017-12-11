@@ -1,14 +1,31 @@
 ---
 layout: page
 title: — Алло, Инженерная?
+description: Напишите нам или просто оставьте свой контакт.
 padded_footer: false
 ---
 
-<div class="text-block -two">
-  <img class="contact-image" src="/assets/images/phone.jpg" alt="phone"/>
-</div>
-<div class="text-block -two">
-  Пишите письма на <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-</div>
+  <div class="text-block -two">
+    <div class="contact-image">
+    </div>
+  </div>
+  
+  <div class="text-block -two">
+      <form class="form w80" action="" name="contact-form" netlify>
+        <div class="form-item">
+          <label>Как с вами связаться? <span class="req">*</span></label>
+          <input type="text"  name="contact" required>
+          <div class="desc">Ответим или перезвоним на следующий рабочий день</div>
+        </div>
+        <div  class="form-item">
+          <label>Сообщение</label>
+          <textarea rows="5" name="message"></textarea>
+        </div>
+        <div>
+          <button class="button" type="submit">Отправить</button>
+        </div>
+    </form>
+    Пишите письма на <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+  </div>
 
 {% include drift.html app_id=site.integrations.drift.app_id %}
